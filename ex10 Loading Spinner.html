@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loading Spinner Example</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: rgb(228, 92, 233); 
+      font-family: Arial, sans-serif;
+    }
+    .loader-container{
+        text-align: center;
+    }
+    .loader {
+      border: 5px solid lightgray;
+      border-top: 5px solid blue;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin {
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="loader-container">
+    <h2 style="text-align:center; color:darkblue;">Loading Spinner</h2>
+    <div class="loader"></div>
+  </div>
+</body>
+</html>
