@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card with Image and Button</title>
+  <style>
+    .card {
+      border: 1px solid #ccc;
+      padding: 20px;
+      width: 320px;
+      height: 500px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s, box-shadow 0.3s;
+      text-align: center;
+      background-color: #fff;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    }
+    .card img {
+      width: 100%;
+      height: 250px;
+      border-radius: 10px;
+    }
+    .card h3 {
+      margin: 20px 0;
+      color: rgb(28, 28, 204);
+    }
+    .card p {
+      color: #555;
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+    .card button {
+      background-color: darkblue;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .card button:hover {
+      background-color: rgb(18, 18, 216);
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="Images/Technology.jpeg" alt="Sample Image">
+    <h2 style="color: blue;">Web Development Internship</h2>
+    <p>Learn, build and grow with real-world Projects and hands-on experience from industry experts.</p>
+    <button>Apply Now -> </button>
+  </div>
+</body>
+</html> 
